@@ -7,6 +7,9 @@ import java.time.LocalDateTime;
 @Getter
 public class MedicionClima {
 
+    private static final double UMBRAL_TEMPERATURA = 35;
+    private static final double UMBRAL_HUMEDAD = 60;
+
     private final String ubicacion;
     private final LocalDateTime fechaHora;
     private final double temperaturaC;
@@ -28,6 +31,10 @@ public class MedicionClima {
 
     public void marcarEvaluada() {
         this.evaluada = true;
+    }
+
+    public boolean esCritica() {
+        return temperaturaC > UMBRAL_TEMPERATURA && humedad > UMBRAL_HUMEDAD;
     }
     
     public String descripcionCompleta() {
