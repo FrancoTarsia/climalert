@@ -23,9 +23,4 @@ public class RepositorioDeMedicionesEnMemoria implements RepositorioDeMediciones
                 .filter(medicion -> !medicion.isEvaluada())
                 .reduce((anterior, siguiente) -> siguiente);
     }
-
-    @Override
-    public List<MedicionClima> todas() {
-        return List.copyOf(this.mediciones);
-    }
 }
