@@ -1,0 +1,18 @@
+spring:
+  application:
+    name: climalert
+
+weather-api:
+  base-url: http://api.weatherapi.com/v1
+  api-key: ${WEATHER_API_KEY:}
+  location: Buenos Aires
+
+climalert:
+  frecuencias:
+    consulta-rate-ms: 300000
+    eval-rate-ms: 60000
+  alerta:
+    destinatarios:
+      - admin@clima.com
+      - emergencias@clima.com
+      - meteorologia@clima.com
