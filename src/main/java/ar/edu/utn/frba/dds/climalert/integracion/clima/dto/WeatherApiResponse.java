@@ -1,4 +1,4 @@
-package ar.edu.utn.frba.dds.climalert.integration.clima.dto;
+package ar.edu.utn.frba.dds.climalert.integracion.clima.dto;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonProperty;

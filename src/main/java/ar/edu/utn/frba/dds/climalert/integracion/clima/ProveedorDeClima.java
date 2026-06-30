@@ -1,4 +1,4 @@
-package ar.edu.utn.frba.dds.climalert.integration.clima;
+package ar.edu.utn.frba.dds.climalert.integracion.clima;
 
 import ar.edu.utn.frba.dds.climalert.domain.MedicionClima;
 
