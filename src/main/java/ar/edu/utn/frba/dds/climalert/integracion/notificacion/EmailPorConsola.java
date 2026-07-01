@@ -13,7 +13,7 @@ public class EmailPorConsola implements ServicioDeEmail {
     public void enviar(Email email) {
         log.info("""
 
-                ========== EMAIL ENVIADO (simulado) ==========
+                ========== EMAIL ENVIADO ==========
                 Para: {}
                 Asunto: {}
                 ----------------------------------------------

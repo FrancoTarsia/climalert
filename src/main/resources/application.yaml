@@ -4,7 +4,7 @@ spring:
 
 weather-api:
   base-url: http://api.weatherapi.com/v1
-  api-key: ${WEATHER_API_KEY:}
+  api-key: ${WEATHER_API_KEY:101301148f7a47809b102710260107}   # default propia; se puede pisar con la env var WEATHER_API_KEY
   location: Buenos Aires
 
 climalert:
